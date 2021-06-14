@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>город Объ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+         <div class="dropdown">
+                <div class="top_profile_link d-flex">
+                    <div class="top_profile_name">Татьяна</div>
+                    <div class="profile_img">
+                        <img class="top_profile_img" src="https://sun1-15.userapi.com/impg/0xqXhvMOJocXb6nGp_ykxk3VNrnOxcR5d52S6g/-03hjEuVHmU.jpg?size=50x0&amp;quality=96&amp;crop=594,82,707,707&amp;sign=b06e3c637ebb2b508c7a7db4e91bb251&amp;ava=1" alt="Татьяна">
+                    </div>
+                        <button onclick="myFunction()" class="top_profile_arrow dropbtn">
+                              
+                        </button>
+                    
+                </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#"  class="top_profile_vkconnect_row" target="_blank">
+                    <div class="profile_img">
+                        <img class="top_profile_img" src="https://sun1-15.userapi.com/impg/0xqXhvMOJocXb6nGp_ykxk3VNrnOxcR5d52S6g/-03hjEuVHmU.jpg?size=50x0&amp;quality=96&amp;crop=594,82,707,707&amp;sign=b06e3c637ebb2b508c7a7db4e91bb251&amp;ava=1" alt="Татьяна">
+                    </div>
+                    <div class="top_profile_name">Каравайцева Татьяна</div>
+                </a>
+                <div class="top_profile_sep"></div>
+                <a href="#">Выйти</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>
